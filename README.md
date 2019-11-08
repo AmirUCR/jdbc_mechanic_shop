@@ -31,3 +31,11 @@ This program has been built and tested on Ubuntu 18.04 including PostgreSQL 10, 
 1. Obtains a physical connection to the database `DriverManager.getConnection(url, username, password)`.
 2. Sends a query to the connection whenever you click on one of the menu options, e.g, `SELECT MAX(id) FROM customer`.
 3. Parses the query returned values and displays them on the GUI.
+
+# Some images
+![Landing Page](https://github.com/AmirUCR/jdbc_mechanic_shop/blob/master/images/landing_page.png)
+![Add Car](https://github.com/AmirUCR/jdbc_mechanic_shop/blob/master/images/add_car.png)
+![Add Customer](https://github.com/AmirUCR/jdbc_mechanic_shop/blob/master/images/add_customer.png)
+![Add Customer](https://github.com/AmirUCR/jdbc_mechanic_shop/blob/master/images/add_customer_2.png)
+![List Cars](https://github.com/AmirUCR/jdbc_mechanic_shop/blob/master/images/list_cars.png)
+![List Cars](https://github.com/AmirUCR/jdbc_mechanic_shop/blob/master/images/list_cars_2.png)
