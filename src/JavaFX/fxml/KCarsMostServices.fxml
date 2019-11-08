@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="652.0" prefWidth="905.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.KCarsMostServices">
+    <children>
+        <Label layoutX="284.0" layoutY="29.0" text="List Cars With Most Services" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font></Label>
+        <Button fx:id="btnReturn" layoutX="408.0" layoutY="586.0" mnemonicParsing="false" onAction="#handleCancelAction" prefHeight="39.0" prefWidth="89.0" style="-fx-background-color: white;" text="Return" textAlignment="CENTER" textFill="#ff2121">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+      <TableView fx:id="table" layoutX="32.0" layoutY="157.0" prefHeight="412.0" prefWidth="842.0">
+         <columns>
+            <TableColumn fx:id="colRow" editable="false" prefWidth="112.0" sortable="false" text="Row" />
+            <TableColumn fx:id="colMake" editable="false" prefWidth="215.0" sortable="false" text="Make" />
+            <TableColumn fx:id="colModel" editable="false" prefWidth="184.0" sortable="false" text="Model" />
+            <TableColumn fx:id="colVIN" editable="false" minWidth="0.0" prefWidth="148.0" sortable="false" text="VIN" />
+            <TableColumn fx:id="colCount" editable="false" prefWidth="182.0" sortable="false" text="Services" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtHowMany" layoutX="360.0" layoutY="61.0" prefHeight="39.0" prefWidth="186.0" promptText="How many cars to list?" />
+      <Button fx:id="btnGo" layoutX="415.0" layoutY="107.0" mnemonicParsing="false" onAction="#handleGoAction" prefHeight="39.0" prefWidth="76.0" style="-fx-background-color: green;" text="GO!" textAlignment="CENTER" textFill="WHITE" />
+    </children>
+</AnchorPane>

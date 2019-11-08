@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="443.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.CloseServiceRequest">
+   <children>
+      <TextField fx:id="txtReqNum" layoutX="54.0" layoutY="147.0" onKeyTyped="#handleKeyboardPressedAction" prefHeight="39.0" prefWidth="179.0" promptText="Service request number" />
+      <TextField fx:id="txtMechID" layoutX="54.0" layoutY="201.0" onKeyTyped="#handleKeyboardPressedAction" prefHeight="39.0" prefWidth="179.0" promptText="Mechanic ID" />
+      <TextArea fx:id="taComments" layoutX="250.0" layoutY="147.0" onKeyTyped="#handleKeyboardPressedAction" prefHeight="146.0" prefWidth="338.0" promptText="Comments...">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="txtBill" layoutX="54.0" layoutY="255.0" onKeyTyped="#handleKeyboardPressedAction" prefHeight="39.0" prefWidth="179.0" promptText="Final bill (in digits)" />
+      <Button fx:id="btnSubmit" layoutX="257.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleSubmitAction" style="-fx-background-color: grey;" text="Submit" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Label layoutX="139.0" layoutY="34.0" text="Close Service Request">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="75.0" text="Please fill out this form" />
+      <Button fx:id="btnCancel" layoutX="264.0" layoutY="381.0" mnemonicParsing="false" onAction="#handleCancelAction" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: white;" text="Cancel" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblError" layoutX="89.0" layoutY="102.0" opacity="0.0" prefHeight="28.0" prefWidth="437.0" style="-fx-alignment: center;" text="Error" textAlignment="CENTER" textFill="RED" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

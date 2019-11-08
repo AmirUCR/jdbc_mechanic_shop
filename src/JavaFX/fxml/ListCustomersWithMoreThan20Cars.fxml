@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="578.0" prefWidth="905.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.ListCustomersWithMoreThan20Cars">
+    <children>
+        <Label layoutX="222.0" layoutY="33.0" text="List Customers With More Than 20 Cars" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font></Label>
+        <Button fx:id="btnReturn" layoutX="419.0" layoutY="520.0" mnemonicParsing="false" onAction="#handleCancelAction" style="-fx-background-color: white;" text="Return" textAlignment="CENTER" textFill="#ff2121">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+      <TableView fx:id="table" layoutX="32.0" layoutY="83.0" prefHeight="412.0" prefWidth="842.0">
+         <columns>
+            <TableColumn fx:id="colRow" editable="false" prefWidth="112.0" sortable="false" text="Row" />
+            <TableColumn fx:id="colFName" editable="false" prefWidth="232.0" sortable="false" text="First Name" />
+            <TableColumn fx:id="colLName" editable="false" prefWidth="206.0" sortable="false" text="Last Name" />
+            <TableColumn fx:id="colID" editable="false" minWidth="0.0" prefWidth="114.0" sortable="false" text="ID" />
+            <TableColumn fx:id="colCars" editable="false" prefWidth="177.0" sortable="false" text="Cars" />
+         </columns>
+      </TableView>
+    </children>
+</AnchorPane>

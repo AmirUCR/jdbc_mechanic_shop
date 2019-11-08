@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="483.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.LandingPage">
+   <children>
+      <Button fx:id="btnAddCustomer" layoutX="44.0" layoutY="155.0" mnemonicParsing="false" onAction="#handleAddCustomer" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #0072bb;" text="Add Customer" textFill="WHITE" />
+      <Button fx:id="btnAddCar" layoutX="44.0" layoutY="216.0" mnemonicParsing="false" onAction="#handleAddCar" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #0072bb;" text="Add Car" textFill="WHITE" />
+      <Button fx:id="btnAddMechanic" layoutX="44.0" layoutY="279.0" mnemonicParsing="false" onAction="#handleAddMechanic" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #0072bb;" text="Add Mechanic" textFill="WHITE" />
+      <Button fx:id="btnListUnder100" layoutX="265.0" layoutY="403.0" mnemonicParsing="false" onAction="#handleListUnder100" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #0072bb;" text="List Customers With Bill Under 100" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Button fx:id="btnListMoreThan20" layoutX="265.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleListMoreThan20" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #0072bb;" text="List Customers With More That 20 Cars" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Button fx:id="btnCarsBefore1995With50KMiles" layoutX="265.0" layoutY="155.0" mnemonicParsing="false" onAction="#handleCarsBefore1995With50KMiles" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #0072bb;" text="List Cars Before 1995 With 50K Miles" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Button fx:id="btnDescBill" layoutX="265.0" layoutY="216.0" mnemonicParsing="false" onAction="#handleDescBill" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #0072bb;" text="List All Customers With Desc Bills " textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Button fx:id="btnKMostServices" layoutX="265.0" layoutY="279.0" mnemonicParsing="false" onAction="#handleKMostServices" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #0072bb;" text="List Cars With Most Services" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Button fx:id="btnCloseServiceReq" layoutX="44.0" layoutY="403.0" mnemonicParsing="false" onAction="#handleCloseServiceRequest" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #0072bb;" text="Close Service Request" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Button fx:id="btnInsertServiceRequest" layoutX="44.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleInsertServiceRequest" prefHeight="49.0" prefWidth="172.0" style="-fx-background-color: #0072bb;" text="Insert Service Request" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Label layoutX="51.0" layoutY="41.0" prefHeight="49.0" prefWidth="379.0" style="-fx-alignment: center;" text="Amir's Mighty Mechanic Shop" textAlignment="CENTER" textFill="#f2a603" wrapText="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="90.0" text="Select an option to begin!" textFill="#6e73ee">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label layoutX="80.0" layoutY="128.0" text="Create Records" textFill="#2c2d4a" />
+      <Label layoutX="311.0" layoutY="128.0" text="List Records" textFill="#2c2d4a" />
+      <Label layoutX="192.0" layoutY="21.0" text="Welcome to" textFill="#8d8f8e">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="408.0" prefWidth="409.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.AddCustomer">
+   <children>
+      <Label layoutX="121.0" layoutY="36.0" text="Add Customer" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Label>
+      <TextField fx:id="txtAddCustomerFName" layoutX="89.0" layoutY="108.0" onKeyTyped="#handleKeyPressed" prefHeight="25.0" prefWidth="232.0" promptText="First Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAddCustomerLName" layoutX="89.0" layoutY="151.0" onKeyTyped="#handleKeyPressed" prefHeight="25.0" prefWidth="232.0" promptText="Last Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAddCustomerPhone" layoutX="89.0" layoutY="191.0" onKeyTyped="#handleKeyPressed" prefHeight="25.0" prefWidth="232.0" promptText="Phone">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAddCustomerAddress" layoutX="89.0" layoutY="231.0" onKeyTyped="#handleKeyPressed" prefHeight="25.0" prefWidth="232.0" promptText="Address">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnAddCustomerCreate" layoutX="147.0" layoutY="282.0" mnemonicParsing="false" onAction="#handleCreateAction" prefHeight="46.0" prefWidth="115.0" style="-fx-background-color: black;" text="Create" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAddCustomerCancel" layoutX="171.0" layoutY="353.0" mnemonicParsing="false" onAction="#handleCancelAction" style="-fx-background-color: white;" text="Cancel" textAlignment="CENTER" textFill="#ff2121">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblError" layoutX="55.0" layoutY="69.0" opacity="0.0" prefHeight="26.0" prefWidth="296.0" style="-fx-alignment: center;" text="Label" textAlignment="CENTER" textFill="RED" />
+   </children>
+</AnchorPane>

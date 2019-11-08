@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="363.0" prefWidth="409.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.AddMechanic">
+   <children>
+      <Label layoutX="121.0" layoutY="36.0" text="Add Mechanic" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Label>
+      <TextField fx:id="txtMechanicFName" layoutX="88.0" layoutY="105.0" prefHeight="25.0" prefWidth="232.0" promptText="First Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtMechanicLName" layoutX="88.0" layoutY="143.0" prefHeight="25.0" prefWidth="232.0" promptText="Last Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtMechanicYear" layoutX="89.0" layoutY="182.0" prefHeight="25.0" prefWidth="232.0" promptText="Years of experience">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnMechanicCreate" layoutX="148.0" layoutY="251.0" mnemonicParsing="false" onAction="#handleAddAction" prefHeight="46.0" prefWidth="115.0" style="-fx-background-color: black;" text="Create" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMechanicReturn" layoutX="172.0" layoutY="307.0" mnemonicParsing="false" onAction="#handleCancelAction" style="-fx-background-color: white;" text="Cancel" textAlignment="CENTER" textFill="#ff2121">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblYearError" layoutX="133.0" layoutY="219.0" opacity="0.0" text="Years must be in digits!" textFill="#ff5353">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblError" layoutX="88.0" layoutY="77.0" onKeyTyped="#handleKeyPressed" opacity="0.0" prefHeight="15.0" prefWidth="232.0" style="-fx-alignment: center;" text="Label" textAlignment="CENTER" textFill="RED" wrapText="true" />
+   </children>
+</AnchorPane>

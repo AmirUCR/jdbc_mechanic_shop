@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="584.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.InsertServiceRequest">
+   <children>
+      <TableView fx:id="tblCar" layoutX="355.0" layoutY="292.0" prefHeight="292.0" prefWidth="406.0">
+        <columns>
+          <TableColumn fx:id="colRowCar" prefWidth="57.0" text="Row" />
+          <TableColumn fx:id="colMake" prefWidth="90.0" text="Make" />
+            <TableColumn fx:id="colModel" prefWidth="78.0" text="Model" />
+            <TableColumn fx:id="colVIN" prefWidth="180.0" text="VIN" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtLName" layoutX="87.0" layoutY="113.0" onAction="#handleKeyboardPressedAction" promptText="Last name" />
+      <TextArea fx:id="taComplaints" layoutX="73.0" layoutY="180.0" prefHeight="200.0" prefWidth="200.0" promptText="Complaints" />
+      <TableView fx:id="tblCustomer" layoutX="355.0" prefHeight="292.0" prefWidth="406.0">
+         <columns>
+            <TableColumn fx:id="colRowCustomer" prefWidth="59.0" text="Row" />
+            <TableColumn fx:id="colFName" prefWidth="135.0" text="First Name" />
+            <TableColumn fx:id="colLName" prefWidth="124.0" text="Last Name" />
+            <TableColumn fx:id="colID" prefWidth="84.0" text="ID" />
+         </columns>
+      </TableView>
+      <Label layoutX="25.0" layoutY="25.0" text="Insert Service Request">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtOdometer" layoutX="87.0" layoutY="146.0" onAction="#handleKeyboardPressedAction" promptText="Odometer" />
+      <Button fx:id="btnSubmit" layoutX="126.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleSubmitAction" style="-fx-background-color: grey;" text="Submit" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancel" layoutX="126.0" layoutY="477.0" mnemonicParsing="false" onAction="#handleCancelAction" prefHeight="29.0" prefWidth="94.0" style="-fx-background-color: white;" text="Cancel" textFill="RED">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblError" layoutX="25.0" layoutY="66.0" opacity="0.0" prefHeight="38.0" prefWidth="295.0" style="-fx-alignment: center;" text="Error" textAlignment="CENTER" textFill="RED" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnGo" layoutX="278.0" layoutY="113.0" mnemonicParsing="false" onAction="#handleGoAction" style="-fx-background-color: green;" text="Go!" textFill="WHITE" />
+      <Label layoutX="320.0" layoutY="112.0" prefHeight="15.0" prefWidth="29.0" text="-&gt;">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="117.0" prefHeight="15.0" prefWidth="29.0" text="-&gt;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
