@@ -1,7 +1,7 @@
 # Mechanic Shop
 Welcome to Amir's Mighty Mechanic Shop. This is a JavaFX application that connects to a local PostgreSQL database. 
 I originally wrote this project on the terminal for my Database Management Systems class at UC Riverside.
-I expanded it using JavaFX which provides a GUI.
+I expanded it using JavaFX which provides a GUI. Tables were provided by UCR.
 
 # Introduction
 This program intends to perform the following functions:
