@@ -97,14 +97,14 @@ CREATE TABLE Closed_Request
 -- INSERT DATA STATEMENTS --
 ----------------------------
 
-\COPY Customer (id, fname, lname, phone, address) FROM '../data/customer.csv' WITH DELIMITER ',';
+\COPY Customer (id, fname, lname, phone, address) FROM 'customer.csv' WITH DELIMITER ',';
 
-\COPY Mechanic (id, fname, lname, experience) FROM '../data/mechanic.csv' WITH DELIMITER ',';
+\COPY Mechanic (id, fname, lname, experience) FROM 'mechanic.csv' WITH DELIMITER ',';
 
-\COPY Car (vin, make, model, year) FROM '../data/car.csv' WITH DELIMITER ',';
+\COPY Car (vin, make, model, year) FROM 'car.csv' WITH DELIMITER ',';
 
-\COPY Owns (ownership_id, customer_id, car_vin) FROM '../data/owns.csv' WITH DELIMITER ',';
+\COPY Owns (ownership_id, customer_id, car_vin) FROM 'owns.csv' WITH DELIMITER ',';
 
-\COPY Service_Request (rid, customer_id, car_vin, date, odometer, complain) FROM '../data/service_request.csv' WITH DELIMITER ',';
+\COPY Service_Request (rid, customer_id, car_vin, date, odometer, complain) FROM 'service_request.csv' WITH DELIMITER ',';
 
-\COPY Closed_Request (wid, rid, mid, date, comment, bill) FROM '../data/closed_request.csv' WITH DELIMITER ',';
+\COPY Closed_Request (wid, rid, mid, date, comment, bill) FROM 'closed_request.csv' WITH DELIMITER ',';
